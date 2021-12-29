@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+	<div id="middle">
+
+        <h1>Map Detail</h1>
+
+    </div>
+
+ <div class="layer">
+
+        <div class="row">
+
+
+	          {% for book in books %}
+	          <div class="information">
+	            <a  href="{{ book.get_absolute_url }}">Check Map For {{ book.title }} </a> |
+	            <a  href="{{ book.get_map_url }}"> create Map For {{ book.title }}</a>
+	          </div>
+	          {% endfor %}
+    
+       </div>
+ 
+  </div>
+
+
+	
+{% endblock %}

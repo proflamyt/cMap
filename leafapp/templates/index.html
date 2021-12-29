@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div id="middle">
+
+        <h1>Map Layout</h1>
+
+    </div>
+
+
+      <div id="lowerleft">
+
+        <h3 class="thick"> Add MapType</h3>
+        <form method="POST">
+          {% csrf_token %}
+          <div class="input-group">
+              <input type="text" class="form-control rounded" placeholder="Add Map" name="name" aria-label="Search"
+              />
+              <button type="submit" class="btn btn-outline-primary">Add</button>
+          
+        </div>
+
+        </form>
+        
+
+
+       
+      </div>
+
+
+
+      <div class="layer">
+        <div class="row">
+          {% for type in types %}
+          <div class="information">
+            <a  href="{{ type.get_absolute_url }}"> {{ type.name }} </a>
+          </div>
+          {% endfor %}
+    
+        
+        </div>
+ 
+      </div>
+
+
+      
+
+        
+
+
+
+
+{% endblock %}

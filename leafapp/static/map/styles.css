@@ -1,0 +1,101 @@
+html {
+      background: black;
+    }
+
+#middle {
+  font-family: sans-serif;
+  position: absolute;
+  color: white;
+  letter-spacing: 0.8rem;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#lowerleft {
+  position: absolute;
+  color: white;
+  bottom: 10%;
+  left: 1%;
+
+
+
+}
+
+a, b{
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  
+
+}
+
+.information {
+
+color: #666;
+border-top: 1px solid #faebd7;
+padding: 20px;
+cursor: pointer;
+user-select: none;
+font-family: "Lato", sans-serif;
+}
+
+
+h2.thick {
+font-weight: bold;
+font: italic;
+
+}
+
+.row {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer{
+
+ 
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 12px;
+  background: #222;
+  z-index: 1000;
+  color: #faebd7;
+
+
+
+}
+
+.modalbody {
+
+    margin-top: 80px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    height: 80%;
+    background: #222;
+    padding: 12px;
+}
+
+.map{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
+
+
+.bold{
+  font-weight: bold;
+  font: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+}
+
+ #map {
+        width: 1500px;
+        height: 1000px;
+    }
